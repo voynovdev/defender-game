@@ -4,7 +4,9 @@
   "description": "\"Browser based game\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist",
+		"lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,16 @@
   "bugs": {
     "url": "https://github.com/voynovdev/defender-game/issues"
   },
-  "homepage": "https://github.com/voynovdev/defender-game#readme"
+  "homepage": "https://github.com/voynovdev/defender-game#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.24.5",
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5",
+    "@eslint/js": "^9.3.0",
+    "eslint": "^9.3.0",
+    "globals": "^15.3.0"
+  },
+  "dependencies": {
+    "core-js": "^3.37.1"
+  }
 }
